@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal Lock - Your Thoughts, Secured</title>
+    <meta
+      name="description"
+      content="Journal Lock helps you build a daily journaling habit by keeping your thoughts private and secure. Block distracting apps until you complete your daily journal entry."
+    />
+    <meta name="keywords" content="journaling, private diary, app blocker, habit building, daily reflection, mindfulness, personal growth, secure journal" />
+    <meta name="author" content="Journal Lock" />
+    <meta name="theme-color" content="#429155" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Journal Lock - Your Thoughts, Secured" />
+    <meta
+      property="og:description"
+      content="Journal Lock helps you build a daily journaling habit by keeping your thoughts private and secure. Block distracting apps until you complete your daily journal entry."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Journal Lock" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Journal Lock - Your Thoughts, Secured" />
+    <meta
+      name="twitter:description"
+      content="Journal Lock helps you build a daily journaling habit by keeping your thoughts private and secure. Block distracting apps until you complete your daily journal entry."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary: #429155;
+        --primary-light: #4da363;
+        --secondary: #7bc08b;
+        --bg-dark: #1e5630;
+        --bg-light: #f0f9f2;
+        --accent: #f59e0b;
+        --text-light: #ffffff;
+        --text-dark: #1e5630;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        background: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        color: #000000;
+        overflow-x: hidden;
+      }
+
+      /* Sparkle animation */
+      .sparkles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 0;
+      }
+
+      .sparkle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: var(--accent);
+        border-radius: 50%;
+        animation: sparkle 3s ease-in-out infinite;
+        opacity: 0;
+      }
+
+      @keyframes sparkle {
+        0%,
+        100% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .sparkle:nth-child(1) {
+        top: 10%;
+        left: 20%;
+        animation-delay: 0s;
+      }
+      .sparkle:nth-child(2) {
+        top: 20%;
+        left: 80%;
+        animation-delay: 0.5s;
+      }
+      .sparkle:nth-child(3) {
+        top: 60%;
+        left: 10%;
+        animation-delay: 1s;
+      }
+      .sparkle:nth-child(4) {
+        top: 70%;
+        left: 90%;
+        animation-delay: 1.5s;
+      }
+      .sparkle:nth-child(5) {
+        top: 30%;
+        left: 50%;
+        animation-delay: 2s;
+      }
+      .sparkle:nth-child(6) {
+        top: 80%;
+        left: 30%;
+        animation-delay: 0.3s;
+      }
+      .sparkle:nth-child(7) {
+        top: 15%;
+        left: 60%;
+        animation-delay: 0.8s;
+      }
+      .sparkle:nth-child(8) {
+        top: 50%;
+        left: 85%;
+        animation-delay: 1.3s;
+      }
+      .sparkle:nth-child(9) {
+        top: 85%;
+        left: 70%;
+        animation-delay: 1.8s;
+      }
+      .sparkle:nth-child(10) {
+        top: 40%;
+        left: 15%;
+        animation-delay: 2.3s;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 4rem;
+        position: relative;
+        z-index: 1;
+        max-width: 1400px;
+        margin: 0 auto;
+        width: 100%;
+        gap: 4rem;
+      }
+
+      .hero {
+        flex: 1;
+        max-width: 550px;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .logo {
+        margin-bottom: 2rem;
+      }
+
+      .logo img {
+        width: 120px;
+        height: auto;
+      }
+
+      .headline {
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-weight: 400;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.03em;
+      }
+
+      .headline .highlight {
+        color: var(--primary);
+        display: block;
+      }
+
+      .subheadline {
+        font-size: clamp(1.1rem, 2vw, 1.4rem);
+        font-weight: 400;
+        opacity: 0.85;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .phone-section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeInUp 1s ease-out 0.2s both;
+      }
+
+      .phone-container {
+        border-radius: 40px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .phone-container video {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        border-radius: 40px;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+
+      .cta-button img {
+        height: 54px;
+        width: auto;
+        filter: grayscale(100%);
+      }
+
+      .cta-button .coming-soon {
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        opacity: 0.8;
+      }
+
+      .tagline {
+        font-size: 0.875rem;
+        font-weight: 400;
+        opacity: 0.7;
+        letter-spacing: 0.05em;
+        margin-top: 2rem;
+      }
+
+      footer {
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+
+      .footer-links a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 0.8rem;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        opacity: 1;
+      }
+
+      .copyright {
+        font-size: 0.75rem;
+        opacity: 0.5;
+      }
+
+      /* Tablet */
+      @media (max-width: 1024px) {
+        main {
+          padding: 2rem;
+          gap: 2rem;
+        }
+
+        .phone-container video {
+          max-width: 340px;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 768px) {
+        main {
+          flex-direction: column;
+          padding: 2rem 1.5rem;
+          gap: 2.5rem;
+          text-align: center;
+        }
+
+        .hero {
+          order: 1;
+        }
+
+        .logo {
+          text-align: center;
+        }
+
+        .logo img {
+          width: 100px;
+        }
+
+        .phone-section {
+          order: 2;
+        }
+
+        .phone-container {
+          border-radius: 30px;
+        }
+
+        .phone-container video {
+          max-width: 280px;
+          border-radius: 30px;
+        }
+
+        .footer-links {
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sparkle effects -->
+    <div class="sparkles">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+
+    <main>
+      <div class="hero">
+        <div class="logo">
+          <img src="journal-lock.png" alt="Journal Lock" />
+        </div>
+
+        <h1 class="headline">your private space for<span class="highlight">honest reflection</span></h1>
+
+        <p class="subheadline">write it down, lock it away</p>
+
+        <div class="cta-button">
+          <img
+            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+            alt="Download on the App Store"
+          />
+          <span class="coming-soon">Coming Soon</span>
+        </div>
+
+        <p class="tagline">journal to unlock your apps</p>
+      </div>
+
+      <div class="phone-section">
+        <div class="phone-container">
+          <video autoplay loop muted playsinline>
+            <source src="journal_lock_demo_web.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <nav class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:support@journallock.app">Contact</a>
+      </nav>
+      <p class="copyright">&copy; 2025 Journal Lock. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
