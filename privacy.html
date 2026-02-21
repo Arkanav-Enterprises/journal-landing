@@ -91,6 +91,13 @@
             color: var(--primary);
         }
 
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #1a1a1a;
+        }
+
         p {
             margin-bottom: 1rem;
         }
@@ -123,58 +130,96 @@
         <a href="index.html" class="back-link">&larr; Back to Journal Lock</a>
 
         <h1>Privacy Policy</h1>
-        <p class="effective-date">Effective Date: January 25, 2025</p>
+        <p class="effective-date"><strong>Effective Date: February 21, 2026</strong></p>
 
-        <p class="intro">This Privacy Policy explains how Journal Lock collects, uses, and protects your information when you use our iOS application. By using Journal Lock, you acknowledge and agree to this policy.</p>
+        <p class="intro">This Privacy Policy explains how Journal Lock ("we," "our," or "the app") collects, uses, and protects your information when you use our iOS application. By using Journal Lock, you acknowledge and agree to this policy.</p>
 
         <hr>
 
-        <h2>Data Collection</h2>
-        <p>We may automatically collect the following information:</p>
+        <h2>Data Stored on Your Device</h2>
+        <p>Your journal entries, drawings, images, mood selections, streak data, app blocking preferences, and onboarding responses are stored locally on your device. This data is not transmitted to our servers.</p>
+
+        <hr>
+
+        <h2>Data Shared with Third-Party Services</h2>
+
+        <h3>AI-Powered Features (OpenAI)</h3>
+        <p>Journal Lock offers optional AI-powered features including personalized journal title generation, writing prompts, and weekly summaries. <strong>These features require your explicit consent before any data is shared.</strong></p>
         <ul>
-            <li>Crash logs and diagnostic data</li>
-            <li>App usage analytics (via Apple Analytics)</li>
-            <li>Device specifications</li>
-            <li>Mood and reflection check-in responses</li>
+            <li><strong>What is sent</strong>: The text content of your journal entries. No images, drawings, personal identifiers, or device information are sent.</li>
+            <li><strong>Who receives it</strong>: Your journal text is sent to our secure server (a Cloudflare Worker), which forwards it to OpenAI's GPT-4o-mini API for processing.</li>
+            <li><strong>How it is used</strong>: Solely to generate titles, prompts, and summaries for your journal entries. Your text is not stored on our server or used by OpenAI to train AI models.</li>
+            <li><strong>Data retention</strong>: OpenAI retains API data for up to 30 days for abuse monitoring, then deletes it. Our server does not log or store any journal content.</li>
+            <li><strong>Your control</strong>: You are asked for explicit permission before AI features are enabled. You can disable AI features at any time in Settings. When disabled, no journal text is sent to any external service.</li>
         </ul>
-        <p>Your journal entries are stored locally on your device and are not transmitted to our servers unless you enable cloud sync.</p>
+
+        <h3>Analytics (PostHog)</h3>
+        <p>We use PostHog to understand how the app is used and improve your experience.</p>
+        <ul>
+            <li><strong>What is collected</strong>: Anonymous usage events (such as "journal entry created" or "paywall viewed"), feature engagement metrics, and app performance data. Events may include non-identifying properties such as word count or streak length.</li>
+            <li><strong>What is NOT collected</strong>: Journal entry text, drawings, images, or any personally identifiable information.</li>
+            <li><strong>Identifiers</strong>: PostHog assigns an anonymous ID to your device. This ID is not linked to your name, email, or Apple ID.</li>
+        </ul>
+
+        <h3>Subscriptions (RevenueCat)</h3>
+        <p>We use RevenueCat to manage in-app subscriptions.</p>
+        <ul>
+            <li><strong>What is shared</strong>: Anonymous purchase receipts and subscription status.</li>
+            <li><strong>What is NOT shared</strong>: Your name, email, journal content, or Apple ID.</li>
+            <li><strong>Purpose</strong>: To verify your subscription status and manage access to premium features.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Data We Do NOT Collect</h2>
+        <ul>
+            <li>We do not create user accounts or require login</li>
+            <li>We do not collect your name, email, or contact information</li>
+            <li>We do not collect location data</li>
+            <li>We do not sell, rent, or trade any user data to third parties</li>
+            <li>We do not use data for advertising or ad targeting</li>
+        </ul>
 
         <hr>
 
         <h2>Data Usage</h2>
         <p>We use collected data to:</p>
         <ul>
-            <li>Monitor app performance</li>
-            <li>Diagnose bugs or crashes</li>
-            <li>Understand user behavior to improve the app</li>
-            <li>Enhance the journaling experience</li>
+            <li>Provide app functionality (AI features generate personalized content for your journal)</li>
+            <li>Monitor app performance and diagnose issues</li>
+            <li>Understand usage patterns to improve the app</li>
+            <li>Verify subscription status</li>
         </ul>
-        <p>All analytics data is anonymized. We do not sell your data to third parties.</p>
 
         <hr>
 
-        <h2>Third-Party Services</h2>
-        <p>Journal Lock may use the following third-party services:</p>
-        <ul>
-            <li><strong>Apple App Store</strong> — for app distribution and payments</li>
-            <li><strong>Apple Analytics</strong> — for anonymized usage metrics</li>
-        </ul>
-        <p>No personally identifiable information is stored on external servers.</p>
+        <h2>Data Security</h2>
+        <p>All journal data is stored locally on your device and protected by your device's passcode, Face ID, or Touch ID. Communication with external services uses HTTPS encryption. We do not maintain a database of user content.</p>
 
         <hr>
 
         <h2>Privacy Controls</h2>
-        <p>Creating an account is not required to use Journal Lock. All your journal entries remain private and stored on your device. If you wish to request deletion of any analytics data associated with your device, please contact us.</p>
+        <p>Creating an account is not required to use Journal Lock. All journal entries remain private and stored on your device. You can disable AI features at any time in Settings. If you wish to request deletion of analytics data associated with your device, please contact us.</p>
+
+        <hr>
+
+        <h2>Third-Party Service Policies</h2>
+        <ul>
+            <li>OpenAI: <a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a></li>
+            <li>PostHog: <a href="https://posthog.com/privacy">https://posthog.com/privacy</a></li>
+            <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
+            <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></li>
+        </ul>
 
         <hr>
 
         <h2>Children's Privacy</h2>
-        <p>Journal Lock is rated 4+ and does not intentionally collect personal information from children under 13. Parents and guardians are responsible for monitoring their children's use of the app.</p>
+        <p>Journal Lock is rated 4+ and does not knowingly collect personal information from children under 13.</p>
 
         <hr>
 
         <h2>Policy Updates</h2>
-        <p>We may update this Privacy Policy from time to time. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+        <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the effective date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
         <hr>
 
