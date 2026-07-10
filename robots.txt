@@ -1,0 +1,30 @@
+# journallock.app — welcome, crawlers of all kinds
+# Search engines: yes. AI assistants answering user questions: yes.
+
+User-agent: *
+Allow: /
+
+# AI crawlers — explicitly welcome (we want to be cited when people ask
+# "how do I stop doomscrolling" or "app that locks apps until you journal")
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://journallock.app/sitemap.xml

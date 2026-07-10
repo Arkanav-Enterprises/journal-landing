@@ -1,414 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Journal Lock - Your Thoughts, Secured</title>
-    <meta
-      name="description"
-      content="Journal Lock helps you build a daily journaling habit by keeping your thoughts private and secure. Block distracting apps until you complete your daily journal entry."
-    />
-    <meta name="keywords" content="journaling, private diary, app blocker, habit building, daily reflection, mindfulness, personal growth, secure journal" />
-    <meta name="author" content="Journal Lock" />
-    <meta name="theme-color" content="#429155" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal Lock — Lock Distracting Apps Until You Journal | Stop Doomscrolling</title>
+  <meta name="description" content="The app blocker with a twist: your apps stay locked until you write a journal entry. Stop doomscrolling and build a journaling habit that sticks. Free on iPhone." />
+  <meta name="author" content="Journal Lock" />
+  <meta name="theme-color" content="#2c6e49" />
+  <link rel="canonical" href="https://journallock.app/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Journal Lock - Your Thoughts, Secured" />
-    <meta
-      property="og:description"
-      content="Journal Lock helps you build a daily journaling habit by keeping your thoughts private and secure. Block distracting apps until you complete your daily journal entry."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Journal Lock" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Journal Lock — Lock Distracting Apps Until You Journal" />
+  <meta property="og:description" content="The app blocker with a twist: your apps stay locked until you write. Stop doomscrolling and build a journaling habit that sticks. Free on iPhone." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://journallock.app/" />
+  <meta property="og:site_name" content="Journal Lock" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://journallock.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Journal Lock — your apps stay locked until you journal" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Journal Lock - Your Thoughts, Secured" />
-    <meta
-      name="twitter:description"
-      content="Journal Lock helps you build a daily journaling habit by keeping your thoughts private and secure. Block distracting apps until you complete your daily journal entry."
-    />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Journal Lock — Lock Distracting Apps Until You Journal" />
+  <meta name="twitter:description" content="The app blocker with a twist: your apps stay locked until you write. Stop doomscrolling and build a journaling habit that sticks." />
+  <meta name="twitter:image" content="https://journallock.app/og-image.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Apple Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=6759090015" />
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://journallock.app/#org",
+        "name": "Journal Lock",
+        "url": "https://journallock.app/",
+        "logo": { "@type": "ImageObject", "url": "https://journallock.app/apple-touch-icon.png" },
+        "sameAs": ["https://apps.apple.com/us/app/journal-lock-focus-detox/id6759090015"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://journallock.app/#website",
+        "url": "https://journallock.app/",
+        "name": "Journal Lock",
+        "publisher": { "@id": "https://journallock.app/#org" }
+      },
+      {
+        "@type": ["MobileApplication", "SoftwareApplication"],
+        "@id": "https://journallock.app/#app",
+        "name": "Journal Lock: Focus & Detox",
+        "alternateName": "Journal Lock",
+        "operatingSystem": "iOS 17.0 or later",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Journal Lock locks your most distracting apps and hands you the key only after you write a journal entry. Stop doomscrolling, reduce screen time, and build a daily journaling habit.",
+        "url": "https://journallock.app/",
+        "installUrl": "https://apps.apple.com/us/app/journal-lock-focus-detox/id6759090015",
+        "image": "https://journallock.app/apple-touch-icon.png",
+        "screenshot": [
+          "https://journallock.app/assets/screenshot-1.webp",
+          "https://journallock.app/assets/screenshot-2.webp",
+          "https://journallock.app/assets/screenshot-3.webp",
+          "https://journallock.app/assets/screenshot-4.webp"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free to download. Journal Lock Pro available as an optional subscription."
+        },
+        "author": { "@id": "https://journallock.app/#org" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://journallock.app/#webpage",
+        "url": "https://journallock.app/",
+        "name": "Journal Lock — Lock Distracting Apps Until You Journal",
+        "isPartOf": { "@id": "https://journallock.app/#website" },
+        "about": { "@id": "https://journallock.app/#app" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://journallock.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does Journal Lock block apps until I journal?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Journal Lock uses Apple's Screen Time framework to lock the apps you choose at a daily time you set. When you open a locked app, you see a shield asking you to journal first. Write a short entry in Journal Lock (as little as ten words) and every locked app unlocks until your next lock time." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Journal Lock a good app to stop doomscrolling?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Journal Lock is built specifically to stop doomscrolling. Instead of just blocking feeds, it replaces the scroll urge with a two-minute journaling ritual. You still get your apps back every day, but only after checking in with yourself first, which breaks the autopilot loop that drives doomscrolling." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Journal Lock block Instagram Reels, TikTok, and YouTube Shorts?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Journal Lock can lock any app on your iPhone, including Instagram, TikTok, and YouTube. Lock the whole app until you've journaled; short-form video is the most common thing our users lock." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my journal private? Can I put a passcode on it?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Every entry is stored locally on your device: no cloud uploads, no accounts, no data mining, no ads. You can also set a separate passcode so the journal itself stays locked away from anyone who picks up your phone." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does journaling actually help with anxiety and focus?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Research on 'affect labeling' shows that putting feelings into words measurably calms the brain's stress response. Consistent journaling is linked to reduced anxiety, better focus, and stronger emotional resilience. Journal Lock's job is making sure you actually do it daily." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Journal Lock free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Journal Lock is free to download and use. Journal Lock Pro is an optional subscription ($5.99/week or $79.99/year with a 3-day free trial) that unlocks unlimited entries, premium themes, and advanced features." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do streaks and the mascot work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Every day you journal extends your streak and feeds your sprout mascot, which gains health and levels up. Miss a day and it starts to shrink. Milestone celebrations mark your progress. It's a small thing, but it makes the daily habit stick." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use Journal Lock as an app blocker for studying?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Set your lock time before your study block, and your distracting apps stay locked until you've journaled; many students use the entry itself to plan the session. One tap re-locks apps any time you need to focus." }
+          }
+        ]
       }
+    ]
+  }
+  </script>
+</head>
+<body>
 
-      :root {
-        --primary: #429155;
-        --primary-light: #4da363;
-        --secondary: #7bc08b;
-        --bg-dark: #1e5630;
-        --bg-light: #f0f9f2;
-        --accent: #f59e0b;
-        --text-light: #ffffff;
-        --text-dark: #1e5630;
-      }
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, sans-serif;
-        background: #ffffff;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        color: #000000;
-        overflow-x: hidden;
-      }
-
-      /* Sparkle animation */
-      .sparkles {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        overflow: hidden;
-        z-index: 0;
-      }
-
-      .sparkle {
-        position: absolute;
-        width: 4px;
-        height: 4px;
-        background: var(--accent);
-        border-radius: 50%;
-        animation: sparkle 3s ease-in-out infinite;
-        opacity: 0;
-      }
-
-      @keyframes sparkle {
-        0%,
-        100% {
-          opacity: 0;
-          transform: scale(0);
-        }
-        50% {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-
-      .sparkle:nth-child(1) {
-        top: 10%;
-        left: 20%;
-        animation-delay: 0s;
-      }
-      .sparkle:nth-child(2) {
-        top: 20%;
-        left: 80%;
-        animation-delay: 0.5s;
-      }
-      .sparkle:nth-child(3) {
-        top: 60%;
-        left: 10%;
-        animation-delay: 1s;
-      }
-      .sparkle:nth-child(4) {
-        top: 70%;
-        left: 90%;
-        animation-delay: 1.5s;
-      }
-      .sparkle:nth-child(5) {
-        top: 30%;
-        left: 50%;
-        animation-delay: 2s;
-      }
-      .sparkle:nth-child(6) {
-        top: 80%;
-        left: 30%;
-        animation-delay: 0.3s;
-      }
-      .sparkle:nth-child(7) {
-        top: 15%;
-        left: 60%;
-        animation-delay: 0.8s;
-      }
-      .sparkle:nth-child(8) {
-        top: 50%;
-        left: 85%;
-        animation-delay: 1.3s;
-      }
-      .sparkle:nth-child(9) {
-        top: 85%;
-        left: 70%;
-        animation-delay: 1.8s;
-      }
-      .sparkle:nth-child(10) {
-        top: 40%;
-        left: 15%;
-        animation-delay: 2.3s;
-      }
-
-      main {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem 4rem;
-        position: relative;
-        z-index: 1;
-        max-width: 1400px;
-        margin: 0 auto;
-        width: 100%;
-        gap: 4rem;
-      }
-
-      .hero {
-        flex: 1;
-        max-width: 550px;
-        animation: fadeInUp 1s ease-out;
-      }
-
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .logo {
-        margin-bottom: 2rem;
-      }
-
-      .logo img {
-        width: 120px;
-        height: auto;
-      }
-
-      .headline {
-        font-size: clamp(2.5rem, 6vw, 4.5rem);
-        font-weight: 400;
-        line-height: 1.1;
-        margin-bottom: 1.5rem;
-        letter-spacing: -0.03em;
-      }
-
-      .headline .highlight {
-        color: var(--primary);
-        display: block;
-      }
-
-      .subheadline {
-        font-size: clamp(1.1rem, 2vw, 1.4rem);
-        font-weight: 400;
-        opacity: 0.85;
-        margin-bottom: 2rem;
-        line-height: 1.6;
-      }
-
-      .phone-section {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        animation: fadeInUp 1s ease-out 0.2s both;
-      }
-
-      .phone-container {
-        border-radius: 40px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: transparent;
-      }
-
-      .phone-container video {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        display: block;
-        border-radius: 40px;
-        background: transparent;
-      }
-
-      .cta-button {
-        display: inline-flex;
-        align-items: center;
-      }
-
-      .cta-button img {
-        height: 54px;
-        width: auto;
-      }
-
-      .tagline {
-        font-size: 0.875rem;
-        font-weight: 400;
-        opacity: 0.7;
-        letter-spacing: 0.05em;
-        margin-top: 2rem;
-      }
-
-      footer {
-        padding: 2rem;
-        text-align: center;
-        position: relative;
-        z-index: 1;
-      }
-
-      .footer-links {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        margin-bottom: 1rem;
-      }
-
-      .footer-links a {
-        color: #000000;
-        text-decoration: none;
-        font-size: 0.8rem;
-        opacity: 0.6;
-        transition: opacity 0.3s ease;
-      }
-
-      .footer-links a:hover {
-        opacity: 1;
-      }
-
-      .copyright {
-        font-size: 0.75rem;
-        opacity: 0.5;
-      }
-
-      /* Tablet */
-      @media (max-width: 1024px) {
-        main {
-          padding: 2rem;
-          gap: 2rem;
-        }
-
-        .phone-container video {
-          max-width: 340px;
-        }
-      }
-
-      /* Mobile */
-      @media (max-width: 768px) {
-        main {
-          flex-direction: column;
-          padding: 2rem 1.5rem;
-          gap: 2.5rem;
-          text-align: center;
-        }
-
-        .hero {
-          order: 1;
-        }
-
-        .logo {
-          text-align: center;
-        }
-
-        .logo img {
-          width: 100px;
-        }
-
-        .phone-section {
-          order: 2;
-        }
-
-        .phone-container {
-          border-radius: 30px;
-        }
-
-        .phone-container video {
-          max-width: 280px;
-          border-radius: 30px;
-        }
-
-        .footer-links {
-          gap: 1rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Sparkle effects -->
-    <div class="sparkles">
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
-      <div class="sparkle"></div>
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/">
+        <img src="/assets/app-icon.png" alt="Journal Lock app icon" width="34" height="34" />
+        Journal Lock
+      </a>
+      <div class="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#screenshots">Screenshots</a>
+        <a class="nav-guides" href="#guides">Guides</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="https://apps.apple.com/us/app/journal-lock-focus-detox/id6759090015">Download</a>
+      </div>
     </div>
+  </nav>
 
-    <main>
-      <div class="hero">
-        <div class="logo">
-          <img src="journal-lock.png" alt="Journal Lock" />
+  <!-- ============ HERO ============ -->
+  <main id="main"><header class="hero" id="download">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-eyebrow rise">🔒 Write to unlock your apps</span>
+        <h1 class="rise rise-2">Your apps stay locked <em>until you journal.</em></h1>
+        <p class="hero-subtitle rise rise-3">Journal Lock is the app blocker with a twist: it locks Instagram, TikTok, and whatever else eats your day, then hands back the key only after you write. Stop doomscrolling. Start a journaling habit you'll actually keep.</p>
+        <div class="rise rise-4">
+          <a class="store-badge" href="https://apps.apple.com/us/app/journal-lock-focus-detox/id6759090015">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download Journal Lock on the App Store" width="180" height="56" />
+          </a>
+          <p class="hero-meta">
+            <span>Free on iPhone</span>
+            <span>Private: everything stays on your device</span>
+            <span>iOS 17+</span>
+          </p>
         </div>
+      </div>
+      <div class="hero-video rise rise-3">
+        <video autoplay loop muted playsinline aria-label="Journal Lock app demo — writing a journal entry to unlock apps">
+          <source src="/journal_lock_promo_transparent.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+  </header>
 
-        <h1 class="headline">your private space for<span class="highlight">honest reflection</span></h1>
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how-it-works">
+    <div class="wrap">
+      <div class="band" style="padding: 3.5rem 2.5rem;">
+        <p class="section-kicker">How it works</p>
+        <h2 class="section-title">A small daily trade: one entry for your screen time.</h2>
+        <p class="section-lede">No guilt, no lectures, no cold-turkey deletes. Journal Lock turns the urge to grab your phone into a moment to check in with yourself.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Lock your distractions</h3>
+            <p>Pick the apps that pull you in: social media, video, games. They lock automatically at the daily time you choose, using Apple's Screen Time framework.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Write to earn the key</h3>
+            <p>Open a locked app and you'll be asked to journal first. A guided prompt, a mood check-in, and as little as ten words is all it takes.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Apps unlock, streak grows</h3>
+            <p>Finish your entry and every app unlocks until tomorrow. Your streak climbs, your mascot levels up, and the doomscrolling quietly fades.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <p class="subheadline">write it down, lock it away</p>
+  <!-- ============ SCREENSHOTS ============ -->
+  <section id="screenshots">
+    <div class="wrap">
+      <p class="section-kicker">Screenshots</p>
+      <h2 class="section-title">A journal on one side. An app blocker on the other.</h2>
+      <p class="section-lede">Everything in Journal Lock exists to make the daily trade effortless, and a little bit delightful.</p>
+    </div>
+    <div class="wrap">
+      <div class="shots">
+        <figure class="shot">
+          <img src="/assets/screenshot-2.webp" alt="Journal Lock app blocker screen — choosing distracting apps to lock until you journal" loading="lazy" width="600" height="1300" />
+          <figcaption>Lock your distractions</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/assets/screenshot-1.webp" alt="Writing a journal entry with a daily prompt and mood check-in to unlock apps" loading="lazy" width="600" height="1300" />
+          <figcaption>Write &amp; unlock</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/assets/screenshot-6.webp" alt="Blocked app shield on iPhone asking you to open Journal Lock and write your entry" loading="lazy" width="600" height="1300" />
+          <figcaption>Apps wait for you</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/assets/screenshot-3.webp" alt="Daily journal home with streak tracking and past entries" loading="lazy" width="600" height="1300" />
+          <figcaption>Journal daily</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/assets/screenshot-7.webp" alt="Journaling streak celebration with weekly calendar" loading="lazy" width="600" height="1300" />
+          <figcaption>Streaks &amp; growth</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/assets/screenshot-4.webp" alt="Progress screen with mascot level and mood-over-time chart" loading="lazy" width="600" height="1300" />
+          <figcaption>Watch yourself grow</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/assets/screenshot-5.webp" alt="Daily summary showing journal streak, mood, and number of apps blocked" loading="lazy" width="600" height="1300" />
+          <figcaption>See what you've built</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/assets/screenshot-8.webp" alt="Private journal passcode screen — a locked journal app for your eyes only" loading="lazy" width="600" height="1300" />
+          <figcaption>Private by design</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-        <a class="cta-button" href="https://apps.apple.com/in/app/journallock-write-focus/id6759090015" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-            alt="Download on the App Store"
-          />
+  <!-- ============ FEATURES ============ -->
+  <section id="features" style="padding-top: 1rem;">
+    <div class="wrap">
+      <p class="section-kicker">Why it sticks</p>
+      <h2 class="section-title">Built for people who want their attention back.</h2>
+      <div class="features">
+        <div class="feature">
+          <span class="emoji">🛡️</span>
+          <h3>Real app blocking</h3>
+          <p>Powered by Apple's Screen Time: locked apps genuinely won't open until you've written. No honor-system willpower required.</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">🔥</span>
+          <h3>Streaks that motivate</h3>
+          <p>Daily streak tracking with milestone celebrations. A week of entries becomes a month before you notice.</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">🌱</span>
+          <h3>A mascot that grows with you</h3>
+          <p>Journal daily and your sprout companion thrives and levels up. Miss a day and it starts to shrink. Weirdly effective.</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">✨</span>
+          <h3>Prompts that evolve</h3>
+          <p>Personalized daily journal prompts and mood check-ins, so you're never staring at a blank page at 7 a.m.</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">🔐</span>
+          <h3>Private, local, yours</h3>
+          <p>Entries live on your device. No cloud, no accounts, no ads. Add a passcode so the journal itself stays locked too.</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">📊</span>
+          <h3>Mood over time</h3>
+          <p>Every entry logs how you feel. Watch your average mood climb as the doomscrolling fades, plus a home screen widget.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GUIDES ============ -->
+  <section id="guides">
+    <div class="wrap">
+      <p class="section-kicker">Guides</p>
+      <h2 class="section-title">Take your attention back, one guide at a time.</h2>
+      <p class="section-lede">Practical, research-backed guides on beating doomscrolling, blocking distractions, and building a journaling habit, written by the team behind Journal Lock.</p>
+      <div class="guides-grid">
+        <a class="guide-card" href="/guides/how-to-stop-doomscrolling">
+          <h3>How to Stop Doomscrolling (Even at 1 A.M.)</h3>
+          <p>Why your brain gets stuck in the scroll, and the step-by-step routine that breaks the loop for good.</p>
+          <span class="go">Read the guide →</span>
         </a>
-
-        <p class="tagline">journal to unlock your apps</p>
+        <a class="guide-card" href="/guides/apps-to-stop-scrolling">
+          <h3>The Best Apps to Stop Scrolling in 2026</h3>
+          <p>An honest comparison of blockers, friction tools, and write-to-unlock apps, and which one fits your habit.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/app-that-blocks-reels-and-shorts">
+          <h3>An App That Blocks Reels and Shorts</h3>
+          <p>Short-form video is engineered to trap you. Here's how to lock it behind a two-minute journal entry.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/block-apps-until-certain-time-iphone">
+          <h3>How to Block Apps Until a Certain Time on iPhone</h3>
+          <p>Screen Time, Focus modes, and Journal Lock's daily lock time: every method, step by step.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/app-blocker-for-studying">
+          <h3>The App Blocker for Studying That Makes You Think First</h3>
+          <p>Block TikTok and Instagram during study sessions, and use a journal entry to plan the work.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/phone-addiction-app">
+          <h3>Feeling Addicted to Your Phone? Start Here.</h3>
+          <p>The signs of problem phone use, what actually helps, and how a phone addiction app fits in.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/digital-detox-app">
+          <h3>The Digital Detox App That Doesn't Ask You to Disappear</h3>
+          <p>Skip the 30-day monk mode. A sustainable daily detox that trades one journal entry for your apps.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/locked-journal-app">
+          <h3>The Locked Journal App for Truly Private Writing</h3>
+          <p>Passcode-protected, stored on your device, no cloud. What a private journal should look like in 2026.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/how-to-journal-daily">
+          <h3>How to Journal Daily (and Actually Keep the Habit)</h3>
+          <p>Why journaling habits fail, the 10-word rule that fixes them, and how streaks rewire the routine.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/journaling-for-anxiety">
+          <h3>Journaling for Anxiety: What the Science Says</h3>
+          <p>Affect labeling, expressive writing, and prompts that calm an overthinking brain, backed by research.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/journal-prompts">
+          <h3>Journal Prompts: 35 Prompts for Every Mood</h3>
+          <p>Real prompts for self-reflection, beginners, anxiety, self-discovery, and mental health. Copy-paste ready.</p>
+          <span class="go">Read the guide →</span>
+        </a>
+        <a class="guide-card" href="/guides/best-journaling-apps">
+          <h3>The Best Journaling Apps in 2026, Compared</h3>
+          <p>Day One, Apple Journal, Reflectly, Journey, and Journal Lock: an honest comparison.</p>
+          <span class="go">Read the guide →</span>
+        </a>
       </div>
+    </div>
+  </section>
 
-      <div class="phone-section">
-        <div class="phone-container">
-          <video autoplay loop muted playsinline>
-            <source src="journal_lock_promo_transparent.webm" type="video/webm" />
-          </video>
-        </div>
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <div class="wrap">
+      <p class="section-kicker">FAQ</p>
+      <h2 class="section-title">Questions, answered.</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How does Journal Lock block apps until I journal?</summary>
+          <div class="faq-body">
+            <p>Journal Lock uses Apple's Screen Time framework to lock the apps you choose at a daily time you set. Open a locked app and you'll see a shield asking you to write first. Finish a short entry (as little as ten words) and every locked app unlocks until your next lock time. <a href="/guides/block-apps-until-certain-time-iphone">Learn more →</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Is Journal Lock a good app to stop doomscrolling?</summary>
+          <div class="faq-body">
+            <p>Yes, that's exactly what it's for. Instead of just blocking feeds, Journal Lock replaces the scroll urge with a two-minute journaling ritual that breaks the autopilot loop. You still get your apps back every day; you just check in with yourself first. <a href="/guides/how-to-stop-doomscrolling">Learn more →</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Can it block Instagram Reels, TikTok, and YouTube Shorts?</summary>
+          <div class="faq-body">
+            <p>Journal Lock can lock any app on your iPhone: Instagram, TikTok, YouTube, games, anything. Short-form video apps are the most common thing our users lock. <a href="/guides/app-that-blocks-reels-and-shorts">Learn more →</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Is my journal private? Can I put a passcode on it?</summary>
+          <div class="faq-body">
+            <p>Every entry is stored locally on your device: no cloud uploads, no accounts, no data mining, no ads. You can also set a separate passcode so the journal itself stays locked from anyone who picks up your phone. <a href="/guides/locked-journal-app">Learn more →</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Does journaling actually help with anxiety and focus?</summary>
+          <div class="faq-body">
+            <p>Research on "affect labeling" shows that putting feelings into words measurably calms the brain's stress response. Consistent journaling is linked to reduced anxiety, better focus, and stronger emotional resilience. Journal Lock's job is making sure you actually do it. <a href="/guides/journaling-for-anxiety">Learn more →</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Is Journal Lock free?</summary>
+          <div class="faq-body">
+            <p>Journal Lock is free to download and use. Journal Lock Pro is an optional subscription ($5.99/week or $79.99/year with a 3-day free trial) for unlimited entries, premium themes, and advanced features. <a href="/guides/digital-detox-app">Learn more →</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How do streaks and the mascot work?</summary>
+          <div class="faq-body">
+            <p>Every day you journal extends your streak and feeds your sprout mascot, which gains health and levels up. Miss a day and it starts to shrink. It's a small thing, but it makes the habit stick. <a href="/guides/how-to-journal-daily">Learn more →</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I use it as an app blocker for studying?</summary>
+          <div class="faq-body">
+            <p>Absolutely. Set your lock time before your study block and your distracting apps stay locked until you've journaled; many students use the entry itself to plan the session. <a href="/guides/app-blocker-for-studying">Learn more →</a></p>
+          </div>
+        </details>
       </div>
-    </main>
+    </div>
+  </section>
 
-    <footer>
-      <nav class="footer-links">
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="mailto:support@journallock.app">Contact</a>
-      </nav>
-      <p class="copyright">&copy; 2025 Journal Lock. All rights reserved.</p>
-    </footer>
-  </body>
+  <!-- ============ CTA ============ -->
+  <section id="cta" style="padding-top: 0.5rem;">
+    <div class="wrap">
+      <div class="band cta-panel">
+        <img class="cta-icon" src="/assets/app-icon.png" alt="Journal Lock app icon" width="96" height="96" />
+        <h2 class="section-title">Start writing. Stop scrolling.</h2>
+        <p class="section-lede" style="margin-inline:auto;">One small daily trade that adds up: a few honest lines, and your attention back. Free on the App Store.</p>
+        <a class="store-badge" href="https://apps.apple.com/us/app/journal-lock-focus-detox/id6759090015">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download Journal Lock on the App Store" width="180" height="56" />
+        </a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <script>
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var heroVideo = document.querySelector('.hero-video video');
+      if (heroVideo) { heroVideo.removeAttribute('autoplay'); heroVideo.pause(); }
+    }
+  </script>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/app-icon.png" alt="Journal Lock app icon" width="44" height="44" />
+        <p>Journal Lock locks your distracting apps until you write. A journaling habit and your attention back, in one daily trade.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="https://apps.apple.com/us/app/journal-lock-focus-detox/id6759090015">Download for iPhone</a></li>
+          <li><a href="/#how-it-works">How it works</a></li>
+          <li><a href="/#screenshots">Screenshots</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stop scrolling</h4>
+        <ul>
+          <li><a href="/guides/how-to-stop-doomscrolling">Stop doomscrolling</a></li>
+          <li><a href="/guides/apps-to-stop-scrolling">Apps to stop scrolling</a></li>
+          <li><a href="/guides/app-that-blocks-reels-and-shorts">Block Reels &amp; Shorts</a></li>
+          <li><a href="/guides/phone-addiction-app">Phone addiction help</a></li>
+          <li><a href="/guides/digital-detox-app">Digital detox</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Journaling</h4>
+        <ul>
+          <li><a href="/guides/how-to-journal-daily">Journal daily</a></li>
+          <li><a href="/guides/journaling-for-anxiety">Journaling for anxiety</a></li>
+          <li><a href="/guides/journal-prompts">Journal prompts</a></li>
+          <li><a href="/guides/best-journaling-apps">Best journaling apps</a></li>
+          <li><a href="/guides/locked-journal-app">Locked journal app</a></li>
+          <li><a href="/guides/app-blocker-for-studying">Blocker for studying</a></li>
+          <li><a href="/guides/block-apps-until-certain-time-iphone">Block apps by time</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy; 2026 Journal Lock. All rights reserved.</span>
+      <span>
+        <a href="/privacy.html" style="color:inherit;">Privacy</a> ·
+        <a href="/terms.html" style="color:inherit;">Terms</a> ·
+        <a href="mailto:support@journallock.app" style="color:inherit;">support@journallock.app</a>
+      </span>
+    </div>
+  </footer>
+
+</body>
 </html>

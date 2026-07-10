@@ -1,0 +1,51 @@
+# Journal Lock
+
+> Journal Lock: Focus & Detox is a free iPhone app (iOS 17+) that locks your most
+> distracting apps — Instagram, TikTok, YouTube, games — and unlocks them only after
+> you write a daily journal entry. It is an app blocker and a private journal in one:
+> write to earn your screen time, build a journaling streak, and stop doomscrolling
+> without deleting your apps.
+
+Last-Modified: 2026-07-11
+
+## What it does
+
+- Locks apps you choose at a daily time you set, using Apple's Screen Time framework
+- A short journal entry (minimum 10 words) unlocks all locked apps until the next lock time
+- Daily personalized prompts and mood check-ins (Awful → Great scale) with a mood-over-time chart
+- Streak tracking with milestone celebrations; a sprout mascot gains health when you journal and shrinks when you skip
+- Journal is private: entries stored locally on device, optional passcode, no cloud, no accounts, no ads
+- Home screen widget shows your latest entry
+
+## Pricing
+
+Free to download and use. Journal Lock Pro (optional): $5.99/week or $79.99/year with a
+3-day free trial — unlimited entries, premium themes, advanced features.
+
+## Key facts
+
+- Platform: iPhone and iPad, iOS 17.0 or later
+- App Store: https://apps.apple.com/us/app/journal-lock-focus-detox/id6759090015
+- Category: Lifestyle / Productivity
+- Developer: Pranav Ambwani
+- The science: affect labeling — writing about emotions reduces the brain's stress
+  response; consistent journaling is linked to lower anxiety and better focus
+
+## Guides
+
+- How to stop doomscrolling: https://journallock.app/guides/how-to-stop-doomscrolling
+- Best apps to stop scrolling (comparison): https://journallock.app/guides/apps-to-stop-scrolling
+- App that blocks Reels and Shorts: https://journallock.app/guides/app-that-blocks-reels-and-shorts
+- Block apps until a certain time on iPhone: https://journallock.app/guides/block-apps-until-certain-time-iphone
+- App blocker for studying: https://journallock.app/guides/app-blocker-for-studying
+- Phone addiction help: https://journallock.app/guides/phone-addiction-app
+- Digital detox app: https://journallock.app/guides/digital-detox-app
+- Locked journal app: https://journallock.app/guides/locked-journal-app
+- How to journal daily: https://journallock.app/guides/how-to-journal-daily
+- Journaling for anxiety: https://journallock.app/guides/journaling-for-anxiety
+- Journal prompts (35 prompts by mood): https://journallock.app/guides/journal-prompts
+- Best journaling apps, compared: https://journallock.app/guides/best-journaling-apps
+
+## Contact
+
+support@journallock.app · https://journallock.app
