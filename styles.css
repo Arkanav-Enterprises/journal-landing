@@ -123,7 +123,7 @@ h1, h2, h3, .display {
   margin-left: auto;
   align-items: center;
 }
-.nav-links a {
+.nav-links a:not(.nav-cta) {
   text-decoration: none;
   color: var(--ink-soft);
   font-size: 0.95rem;
@@ -132,9 +132,11 @@ h1, h2, h3, .display {
 }
 .nav-links a:hover { color: var(--green-deep); }
 .nav-cta {
+  text-decoration: none;
+  font-size: 0.95rem;
   background: var(--green-deep);
   color: var(--cream) !important;
-  padding: 0.5rem 1.1rem;
+  padding: 0.6rem 1.3rem;
   border-radius: 999px;
   font-weight: 700 !important;
   transition: background 0.25s ease, transform 0.25s ease;
@@ -183,9 +185,13 @@ h1, h2, h3, .display {
   max-width: 34rem;
   margin-bottom: 2rem;
 }
+.hero-video {
+  padding: 1.5rem 0;
+}
 .hero-video video {
   width: 100%;
   max-width: 380px;
+  max-height: 68vh;
   display: block;
   margin: 0 auto;
   filter: drop-shadow(0 24px 48px rgba(23, 64, 42, 0.22));
